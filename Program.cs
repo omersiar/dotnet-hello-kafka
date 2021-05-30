@@ -27,8 +27,8 @@ class Program
                 SecurityProtocol = SecurityProtocol.SaslPlaintext,
                 // Note: If your root CA certificates are in an unusual location you
                 // may need to specify this using the SslCaLocation property.
-                SaslUsername = "test",
-                SaslPassword = "test123"
+                SaslUsername = "kafka",
+                SaslPassword = "kafka-secret"
             };
             
             using (var producer = new ProducerBuilder<Null, string>(pConfig).Build())

@@ -22,7 +22,7 @@ class Program
         {
             var pConfig = new ProducerConfig
             {
-                BootstrapServers = "kafka.confluent.svc.cluster.local:9092",
+                BootstrapServers = "kafka.confluent.svc.cluster.local:9071",
                 SaslMechanism = SaslMechanism.Plain,
                 SecurityProtocol = SecurityProtocol.SaslPlaintext,
                 // Note: If your root CA certificates are in an unusual location you
